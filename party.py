@@ -17,14 +17,25 @@ def is_mel(name, email):
     >>> is_mel('Mel Melitpolski', 'john@john.com')
     True
 
+    >>> is_mel('MEL', 'john@john.com')
+    True
+
+    >>> is_mel('MELitpolski', 'john@john.com')
+    True
+
+    >>> is_mel('hello', 'MEL@UBERMELON.COM')
+    True
+
     >>> is_mel('Jane Smith', 'mel@ubermelon.com')
     True
 
     >>> is_mel('Judith Butler', 'judith@awesome.com')
     False
     """
+    name = name.lower()
+    email = email.lower()
 
-    return name == "Mel Melitpolski" or email == "mel@ubermelon.com"
+    return name == "mel melitpolski" or name == "mel" or name == "melitpolski" or email == "mel@ubermelon.com"
 
 
 def most_and_least_common_type(treats):
@@ -70,6 +81,7 @@ def most_and_least_common_type(treats):
         types[treat['type']] = types.get(treat['type'], 0) + 1
 
     most_count = most_type = None
+    least_count = least_type = None
 
     # Find most, least common
     for ttype, count in types.items():
