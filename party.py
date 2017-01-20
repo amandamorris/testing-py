@@ -102,9 +102,9 @@ def get_treats():
     """
 
     return [
-        {'type': 'dessert',
-         'description': 'Chocolate mousse',
-         'who': 'Leslie'},
+        # {'type': 'dessert',
+        #  'description': 'Chocolate mousse',
+        #  'who': 'Leslie'},
         {'type': 'dessert',
          'description': 'Cardamom-Pear pie',
          'who': 'Joel'},
@@ -117,15 +117,15 @@ def get_treats():
         {'type': 'appetizer',
          'description': 'Mini-enchiladas',
          'who': 'Katie'},
-        {'type': 'drink',
-         'description': 'Sangria',
-         'who': 'Anges'},
-        {'type': 'dessert',
-         'description': 'Chocolate-raisin cookies',
-         'who': 'Henry'},
-        {'type': 'dessert',
-         'description': 'Brownies',
-         'who': 'Sarah'}
+        # {'type': 'drink',
+        #  'description': 'Sangria',
+        #  'who': 'Anges'},
+        # {'type': 'dessert',
+        #  'description': 'Chocolate-raisin cookies',
+        #  'who': 'Henry'},
+        # {'type': 'dessert',
+        #  'description': 'Brownies',
+        #  'who': 'Sarah'}
     ]
 
 
